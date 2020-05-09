@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+
+    <title></title>
+
+    
+  </head>
+
+  <body>
+    <script>
+      // Create playable varibles and assign to numbers  
+      const playOptions = {
+          paper: 0,
+          scissors: 1,
+          rock: 2  
+        } 
+
+      function computerPlay() {
+        
+        //generate random between 0 and 2
+        return Math.floor(Math.random() * 3)
+        
+      }
+
+      function playGame(playerSelection, computerSelection) {
+
+        // Make input case insensitive
+        const CI_playerSelection = playerSelection.toLowerCase();
+        console.log(CI_playerSelection);
+        console.log(playOptions[CI_playerSelection]);
+        
+        
+        // compare user and computer input
+        if (playOptions[CI_playerSelection] > computerSelection ) {}
+
+        // return result
+        }
+    </script>
+  </body>
+</html>
